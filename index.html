@@ -71,15 +71,22 @@
     }
 
     .logo {
-      width: 44px;
-      height: 44px;
-      border-radius: 16px;
-      display: grid;
-      place-items: center;
-      color: #06101e;
-      font-weight: 950;
-      background: linear-gradient(135deg, var(--accent), var(--accent-3));
-      box-shadow: 0 12px 30px rgba(34, 211, 238, .2);
+    width: 44px;
+    height: 44px;
+    border-radius: 16px;
+    overflow: hidden; /* Important */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--accent), var(--accent-3));
+    box-shadow: 0 12px 30px rgba(34, 211, 238, .2);
+    }
+    
+    .logo img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; /* or cover */
+        display: block;
     }
 
     .brand-title {
